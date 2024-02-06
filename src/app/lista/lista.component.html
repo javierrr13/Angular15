@@ -1,1 +1,12 @@
-<p>lista works!</p>
+<div class = "contenedor-componente">
+    <div *ngFor = "let personaje of listaDePersonajes" class = "contenedor-personaje">
+        <img [src]="personaje.imagen" class="foto">
+        <div class="datos">
+            <div class ="datos-basicos">
+                <span>Nombre :<br>{{personaje.nombre}}</span>
+                <span>Edad: <br>{{personaje.edad}}</span>
+            </div>
+            <span>Descripcion: <br>{{personaje.descripcion}}</span>
+        </div>
+    </div>    
+</div>

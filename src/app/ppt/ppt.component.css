@@ -1,0 +1,102 @@
+.selecciones{
+    width: 300px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 20px;
+}
+.eleccion{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    animation: latir 2s infinite;
+}
+.contenedor-general{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(51, 48, 48);
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.eleccion:hover{
+    background-color: aqua;
+    cursor: pointer;
+       
+}
+
+.piedra{
+    background-image: url();
+    background-size: cover;
+}
+.papel{
+    background-image: url();
+    background-size: cover;
+}
+.tijera{
+    background-image: url();
+    background-size: cover;
+}
+@media  only screen and (max-width:500px){
+    .consola{
+        width: 300px;
+    }
+}
+@media  only screen and (max-width:400px){
+    .consola{
+        width: 200px;
+    }
+}
+@keyframes latir{
+  
+    0%{
+        transform:scale(0.9);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(0.9);
+    }
+}
+.contenedor-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.consola {
+    text-align: center;
+}
+
+.selecciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.eleccion {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.selected {
+    border-color: blue;
+}
+
+.vidas {
+    font-size: 24px;
+}
+
+.corazon {
+    color: red;
+    margin: 0 5px;
+}
+
+/* Agrega aquí las animaciones para las elecciones */

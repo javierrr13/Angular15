@@ -1,0 +1,9 @@
+<!-- tu-componente.component.html -->
+
+<div *ngIf="usuario">
+    <img [src]="usuario.picture.large" alt="User">
+    <p>{{ usuario.name.first }} {{ usuario.name.last }}</p>
+    <p>{{ usuario.email }}</p>
+    <!-- Agrega más campos según sea necesario -->
+  </div>
+  

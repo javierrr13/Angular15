@@ -1,0 +1,20 @@
+<div class="contenedor-general">
+  <div class="consola">
+      <p>Tu elección: {{ userChoice }}</p>
+      <p>Elección de la computadora: {{ computerChoice }}</p>
+      <p>Resultado: {{ winner }}</p>
+      <button   *ngIf="winner !== null" (click)="resetGame()">Jugar de nuevo</button>
+      <p>Vidas:</p>
+      <div class="vidas">
+          <span *ngFor="let life of userLives" class="corazon">❤</span>
+      </div>
+  </div>
+
+  <div class="selecciones">
+      <div (click)="selectOption('piedra')" class="eleccion piedra" [ngClass]="{ 'selected': userChoice === 'piedra' }"></div>
+      <div (click)="selectOption('papel')" class="eleccion papel" [ngClass]="{ 'selected': userChoice === 'papel' }"></div>
+      <div (click)="selectOption('tijera')" class="eleccion tijera" [ngClass]="{ 'selected': userChoice === 'tijera' }"></div>
+  </div>
+</div>
+
+  

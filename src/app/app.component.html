@@ -1,1 +1,22 @@
-<app-lista></app-lista>
+<!--<app-lista>
+   
+</app-lista>
+<app-material-components></app-material-components>
+<div class="progresBar">
+    <app-progress-bar></app-progress-bar>
+</div>
+-->
+
+<!--Modificaciones mínimas:
+La máquina tiene 5 vidas, el usuario tiene 5 vidas, cada vez que uno pierde se le resta una vida. al acabar las vidas de uno de los dos se muestra que la partida ha finalizado
+Las vidas se tienen que mostrar de forma gráfica en forma de corazones (usando *ngIf o *ngFor)
+Las elecciones del usuario o de la máquina se tienen que mostrar de forma gráfica mediante una animación (no es válido solo texto)
+Al finalizar la partida se debe ofrecer la opción de volver a jugar.-->
+<mat-toolbar color = "primary">
+    <div class = "opcion " routerLink="/piedrapapeltijera"> Ir a piedra papel tijera</div>
+    <div class = " opcion " routerLink="/aleatorio"> Ir a aleatorio</div>
+    <div class="opcion" (click)="ChangeRoute()"></div>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
