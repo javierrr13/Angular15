@@ -1,10 +1,10 @@
 <div class="contenedor-general">
   <div class="consola">
-      <p>Tu elección: {{ userChoice }}</p>
-      <p>Elección de la computadora: {{ computerChoice }}</p>
-      <p>Resultado: {{ winner }}</p>
-      <button   *ngIf="winner !== null" (click)="resetGame()">Jugar de nuevo</button>
-      <p>Vidas:</p>
+      <p>Tu elección: {{ userChoice }}</p><br>
+      <p>Elección de la computadora: {{ computerChoice }}</p><br>
+      <p>Resultado: {{ winner }}</p><br>
+      <button mat-button  *ngIf="winner !== null" (click)="resetGame()">Jugar de nuevo</button>
+      <p>Vidas:</p><br>
       <div class="vidas">
           <span *ngFor="let life of userLives" class="corazon">❤</span>
       </div>

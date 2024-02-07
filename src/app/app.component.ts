@@ -13,6 +13,14 @@ export class AppComponent {
                    
   }
   ChangeRoute(){
-      this.router.navigate(['/semaforo'])
+    const rutas = [
+      '/piedrapapeltijera',
+      '/aleatorio',
+      '/progresbar',
+      '/jugadores',
+      '/error404'
+    ];
+    const rutaAleatoria = rutas[Math.floor(Math.random() * rutas.length)]
+    this.router.navigate([rutaAleatoria]);
   }
 }
