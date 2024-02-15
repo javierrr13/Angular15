@@ -15,6 +15,10 @@ import { PptComponent } from './ppt/ppt.component';
 import { TuComponenteComponent } from './tu-componente/tu-componente.component';
 import {MatButtonModule} from '@angular/material/button';
 import { Error404Component } from './error404/error404.component';
+import { TextoComponent } from './texto/texto.component';
+import { ListaTarjetasComponent } from './lista-tarjetas/lista-tarjetas.component';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { ZurulloComponent } from './zurullo/zurullo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,11 @@ import { Error404Component } from './error404/error404.component';
     ProgressBarComponent,
     PptComponent,
     TuComponenteComponent,
-    Error404Component
+    Error404Component,
+    TextoComponent,
+    ListaTarjetasComponent,
+    TarjetaComponent,
+    ZurulloComponent
   ],
   imports: [
     BrowserModule,

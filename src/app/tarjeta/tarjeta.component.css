@@ -1,0 +1,33 @@
+.foto{
+    width: 100px;
+    height: 100px;
+}
+.contenedor-personaje{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(221, 255, 127);
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 37px 51px 61px 3px rgb(168, 235, 159);
+    -moz-box-shadow: 37px 51px 61px 3px rgba(235,159,235,1);
+    box-shadow: 37px 51px 61px 3px rgba(235,159,235,1);
+    margin: 10px;
+}
+.contenedor-personaje:hover{
+    background-color: blue;
+}
+
+.contenedor-componente{
+    float: left;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(221, 255, 127);
+}
+.datos-basicos{
+     justify-content: space-between;
+     display: flex;
+     flex-direction: row;
+     background-color: rgb(221, 255, 127);
+}

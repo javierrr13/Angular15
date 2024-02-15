@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Miprimerproyectov15';
   personaje1: any;
-  
+  nombreDeUsuario:string="javi"
   constructor(private router:Router){
                    
   }

@@ -1,0 +1,10 @@
+<div class ="contenedor-componente">
+    <app-zurullo [saludo]="saludoParaZurullo"></app-zurullo>
+    <h1>{{datosDelHijo}}</h1>
+    <app-tarjeta *ngFor="let Personaje of listaDePersonajes"
+    [descripcion]="Personaje.descripcion"
+    [edad]="Personaje.edad"
+    [nombre]="Personaje.nombre"
+    [imagen]="Personaje.imagen"
+    (datosEnviados)="recibirDatos($event)"    ></app-tarjeta>
+</div>

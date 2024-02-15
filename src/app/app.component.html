@@ -13,8 +13,8 @@ Las vidas se tienen que mostrar de forma gráfica en forma de corazones (usando 
 Las elecciones del usuario o de la máquina se tienen que mostrar de forma gráfica mediante una animación (no es válido solo texto)
 Al finalizar la partida se debe ofrecer la opción de volver a jugar.-->
 <mat-toolbar>
-    <div class = "opcion " routerLink="/piedrapapeltijera"> Ir a piedra papel tijera</div>
-    <!--<div class="opcion" (click)="ChangeRoute()"></div>-->
+    <div class = "opcion " [routerLink]="['/piedrapapeltijera',nombreDeUsuario]"> Ir a piedra papel tijera</div>
+    <div class = "opcion " routerLink="/listaTarjetas"> Ir a lista de tarjetas</div>
 </mat-toolbar>
 
 

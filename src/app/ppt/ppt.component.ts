@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-ppt',
@@ -12,6 +13,12 @@ export class PptComponent implements OnInit {
     computerChoice: string | null = null;
     winner: string | null = null;
     isComputing: boolean = false;
+    nombre:string="";
+    texto:string="";
+
+    constructor(private route:ActivatedRoute){
+        
+    }
 
     selectOption(option: string): void {
         this.userChoice = option.toLowerCase();
@@ -56,5 +63,14 @@ export class PptComponent implements OnInit {
         this.isComputing = true;
     }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.nombre
+        this.route.params.subscribe(
+            params=>{
+                this.nombre=params['nick'];
+                this.texto="Hola bienvenido " + this.nombre+ " a piedra papel o tijera"    
+            }
+        )
+
+    }
 }
