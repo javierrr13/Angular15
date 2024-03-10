@@ -1,0 +1,11 @@
+
+<div class="game-container">
+  <table>
+    <tr *ngFor="let fila of tablero; let i = index">
+      <td *ngFor="let celda of fila; let j = index" (click)="hacerMovimiento(i, j)">
+        {{ celda }}
+      </td>
+    </tr>
+  </table>
+  <button (click)="reiniciarJuego()">Reiniciar Juego</button>
+</div>

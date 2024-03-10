@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que el body tome al menos el alto de la pantalla */
+  margin: 0; /* Elimina los márgenes por defecto */
+  background-color: #28a745;
+  background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+/* Estilos para el contenedor, ajusta según tus preferencias */
+.container {
+  width: 90%; /* O el ancho que prefieras */
+  max-width: 400px; /* O el máximo ancho que prefieras */
+  padding: 20px; /* Espaciado interno */
+  background-color: #f7f7f7; /* Color de fondo del contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.score {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.winner {
+  color: #28a745;
+  font-size: 1.4em;
+  margin: 20px 0;
+}

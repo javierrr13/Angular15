@@ -1,0 +1,7 @@
+<div class="container">
+  <p class="score">Jugador: {{ playerScore }}</p>
+  <p class="score">Maquina: {{ machineScore }}</p>
+  <button (click)="rollDiceForPlayer()" *ngIf="currentPlayer === 'player' && !isGameOver">Roll Dice</button>
+  <p *ngIf="isGameOver" class="winner">Winner: {{ winner }}</p>
+  <button (click)="resetGame()" *ngIf="isGameOver">Restet</button>
+</div>

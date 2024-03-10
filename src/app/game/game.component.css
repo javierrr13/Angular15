@@ -1,0 +1,50 @@
+/* game.component.css */
+/* game.component.css */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #8e44ad; /* Fondo púrpura */
+  color: #ecf0f1; /* Color del texto */
+  font-family: 'Arial', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  background: #9b59b6; /* Fondo más claro para el tablero */
+}
+
+td {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ecf0f1; /* Borde de celda */
+  text-align: center;
+  vertical-align: middle;
+  font-size: 36px; /* Tamaño del símbolo X y O */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Suaviza el cambio de color */
+}
+
+td:hover {
+  background-color: #8e44ad; /* Cambio de color al pasar el mouse */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ecf0f1;
+  color: #8e44ad;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px; /* Reducido de 20px a 10px para acercar el botón al tablero */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #8e44ad;
+  color: #ecf0f1;
+}

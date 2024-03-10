@@ -19,6 +19,11 @@ import { TextoComponent } from './texto/texto.component';
 import { ListaTarjetasComponent } from './lista-tarjetas/lista-tarjetas.component';
 import { TarjetaComponent } from './tarjeta/tarjeta.component';
 import { ZurulloComponent } from './zurullo/zurullo.component';
+import { GameComponent } from './game/game.component';
+import { DadosPadreComponent } from './dados-padre/dados-padre.component';
+import { DatosHijoComponent } from './datos-hijo/datos-hijo.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +36,10 @@ import { ZurulloComponent } from './zurullo/zurullo.component';
     TextoComponent,
     ListaTarjetasComponent,
     TarjetaComponent,
-    ZurulloComponent
+    ZurulloComponent,
+    GameComponent,
+    DadosPadreComponent,
+    DatosHijoComponent
   ],
   imports: [
     BrowserModule,
